@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1\\PA6.csproj",
+      "projectUniqueName": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1repo\\PA1\\PA6.csproj",
       "projectName": "PA6",
-      "projectPath": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1\\PA6.csproj",
+      "projectPath": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1repo\\PA1\\PA6.csproj",
       "packagesPath": "C:\\Users\\jwcar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1\\obj\\",
+      "outputPath": "C:\\Users\\jwcar\\OneDrive\\Documents\\School\\University of Alabama\\Fall 2021\\MIS 321\\code\\PA1repo\\PA1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jwcar\\AppData\\Roaming\\NuGet\\NuGet.Config"

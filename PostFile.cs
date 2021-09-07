@@ -7,7 +7,16 @@ namespace PA6
     {
         public static List<Post> GetPosts(){
             List <Post> tempPosts=new List<Post>();
-            StreamReader inFile=new StreamReader("posts.txt");
+            StreamReader inFile=null;
+            try
+            {
+                 inFile=new StreamReader("posts.txt");
+            }
+            catch (System.Exception e)
+            {
+                Console.WriteLine("Something went wrong..... returning blank list {0}",e);
+                return tempPosts;
+            }
             string line=inFile.ReadLine();//priming read
             while(line!=null){
                 string[] temp=line.Split("#");

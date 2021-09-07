@@ -68,19 +68,36 @@ namespace PA6
 
         }
         public static void DeletePost(){
+             int id=0;
             Console.Clear();
-            Console.WriteLine("What is the ID of the post you want deleted?");
-            int id=int.Parse(Console.ReadLine());
+            PostUtils.PrintAllPosts();
+            while(!PostUtils.CheckID(id)){
+                Console.Clear();
+                PostUtils.PrintAllPosts();
+                Console.WriteLine("What is the ID of the post you want deleted?");
+                id=int.Parse(Console.ReadLine());
+                if(!PostUtils.CheckID(id)){
+                    Console.WriteLine("Post with ID does not exist.");
+                    Console.ReadKey();
+                }
+
+            }
             List <Post> tempPost=PostFile.GetPosts();
             int index=0;
             foreach(Post post in tempPost){
                 
                 if(post.PostID==id){
+                    Console.Clear();
                     Console.WriteLine(post+"\nIs this the post you want deleted? \n1. Yes\n2. No");
-                    if(Console.ReadLine()=="1"){
+                    string ans=Console.ReadLine();
+                    if(ans=="1"){
                         tempPost.RemoveAt(index);
+                        break;
                     }
-                    break;
+                    else if(ans=="2"){
+                        DeletePost();
+                    }
+                    
                 }
                 index++;
             }
